@@ -1,0 +1,16 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1701791514
+game.gd::GDScript::-1::1701791405::0::1::::<>Node2D<>::
+game.tscn::PackedScene::1270594214624756262::1701791445::0::1::::<><>::res://game.gd
+icon.svg::CompressedTexture2D::5036053555196337818::1701781539::1701781545::1::::<><>::
+Paper.gd::GDScript::-1::1701791441::0::1::::<>Area2D<>::
+Paper.tscn::PackedScene::9070680592384557511::1701791445::0::1::::<><>::res://Paper.gd<>uid://b3pwqn6t3vtan::::res://Assets/paper.png
+Rock.gd::GDScript::-1::1701791437::0::1::::<>Area2D<>::
+Rock.tscn::PackedScene::9075194877442072008::1701791445::0::1::::<><>::uid://cokl8407dpm3d::::res://Assets/rock.svg<>res://Rock.gd
+Scissors.gd::GDScript::-1::1701791444::0::1::::<>Area2D<>::
+Scissors.tscn::PackedScene::188672425015306458::1701791444::0::1::::<><>::uid://n723kuyy27ji::::res://Assets/scissors.svg<>res://Scissors.gd
+::res://Assets/::1701782376
+paper.png::CompressedTexture2D::4384039050006271585::1701782112::1701782265::1::::<><>::
+rock.svg::CompressedTexture2D::5776857337234357459::1701781818::1701782265::1::::<><>::
+scissors.png::CompressedTexture2D::5716010616759139271::1701782380::1701782376::1::::<><>::
+scissors.svg::CompressedTexture2D::980204973711575954::1701782093::1701782265::1::::<><>::
