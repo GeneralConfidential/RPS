@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2kdesuc0sadc"]
+
+[ext_resource type="Texture2D" uid="uid://cokl8407dpm3d" path="res://Assets/rock.svg" id="1_a0jeb"]
+[ext_resource type="Script" path="res://Rock.gd" id="1_rdpyu"]
+
+[node name="Rock" type="Area2D"]
+script = ExtResource("1_rdpyu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("1_a0jeb")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2(0.05, 0.05)
+polygon = PackedVector2Array(-162, -260, -282, -198, -294, -184, -302, -163, -301, -139, -299, -118, -291, -95, -356, -5, -368, 37, -380, 164, -380, 182, -299, 286, -110, 314, -71, 358, -28, 367, 28, 371, 119, 367, 158, 361, 179, 344, 197, 325, 216, 304, 221, 288, 331, 247, 368, 175, 378, 115, 362, 53, 333, -23, 323, -98, 285, -173, 251, -194, 210, -217, 187, -216, 88, -308, -16, -334, -134, -309)
+
+[connection signal="area_entered" from="." to="." method="_on_Rock_area_entered"]

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxnn32ry4bti"]
+
+[ext_resource type="Texture2D" uid="uid://n723kuyy27ji" path="res://Assets/scissors.svg" id="1_g6cea"]
+[ext_resource type="Script" path="res://Scissors.gd" id="1_ghag5"]
+
+[node name="Scissors" type="Area2D"]
+script = ExtResource("1_ghag5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("1_g6cea")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2(0.05, 0.05)
+polygon = PackedVector2Array(-197, -401, -208, -383, -217, -355, -222, -326, -48, 9, -117, 144, -157, 129, -200, 132, -225, 144, -249, 158, -281, 196, -305, 240, -311, 280, -303, 318, -282, 359, -251, 386, -219, 398, -179, 394, -138, 375, -108, 358, -75, 313, -49, 193, -1, 85, 49, 182, 70, 291, 97, 342, 130, 374, 164, 386, 226, 398, 256, 385, 283, 366, 295, 342, 311, 305, 313, 275, 302, 247, 295, 215, 270, 185, 246, 159, 205, 134, 157, 123, 116, 145, 46, 13, 213, -312, 219, -345, 211, -372, 203, -393, 191, -404, 0, -64)
+
+[connection signal="area_entered" from="." to="." method="_on_Scissors_area_entered"]

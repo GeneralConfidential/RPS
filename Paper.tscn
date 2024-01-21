@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2h51wo2f1nid"]
+
+[ext_resource type="Script" path="res://Paper.gd" id="1_hhltx"]
+[ext_resource type="Texture2D" uid="uid://b3pwqn6t3vtan" path="res://Assets/paper.png" id="1_q6k02"]
+
+[node name="Paper" type="Area2D"]
+script = ExtResource("1_hhltx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -1.90735e-06)
+scale = Vector2(0.05, 0.049)
+texture = ExtResource("1_q6k02")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(0, 2)
+scale = Vector2(0.05, 0.05)
+polygon = PackedVector2Array(-254, -326, -256, 326, 233, 327, 258, 308, 259, -301, 233, -332)
+
+[connection signal="area_entered" from="." to="." method="_on_Paper_area_entered"]
